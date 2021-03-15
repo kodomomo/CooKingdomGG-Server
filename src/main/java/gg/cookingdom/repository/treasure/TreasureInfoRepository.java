@@ -1,6 +1,7 @@
-package gg.cookingdom.treasure;
+package gg.cookingdom.repository.treasure;
 
-import gg.cookingdom.cookie.Rank;
+import gg.cookingdom.enums.Rank;
+import gg.cookingdom.dto.treasure.Treasure;
 
 import java.util.List;
 

@@ -1,6 +1,10 @@
-package gg.cookingdom.cookie;
+package gg.cookingdom.repository.cookie;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import gg.cookingdom.dto.cookie.Cookie;
+import gg.cookingdom.enums.CookieMajor;
+import gg.cookingdom.enums.CookiePosition;
+import gg.cookingdom.enums.Rank;
 import lombok.SneakyThrows;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;

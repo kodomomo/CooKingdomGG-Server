@@ -1,6 +1,6 @@
-package gg.cookingdom.treasure;
+package gg.cookingdom.dto.treasure;
 
-import gg.cookingdom.cookie.Rank;
+import gg.cookingdom.enums.Rank;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

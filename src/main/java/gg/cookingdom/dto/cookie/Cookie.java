@@ -1,5 +1,8 @@
-package gg.cookingdom.cookie;
+package gg.cookingdom.dto.cookie;
 
+import gg.cookingdom.enums.CookieMajor;
+import gg.cookingdom.enums.CookiePosition;
+import gg.cookingdom.enums.Rank;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
