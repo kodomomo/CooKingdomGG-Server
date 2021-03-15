@@ -38,7 +38,7 @@ public class JsonTreasureInfoRepository implements TreasureInfoRepository{
     @Override
     public List<Treasure> getTreasureByRank(Rank rank) {
         return treasures.stream()
-                .filter(treasure -> treasure.getRank() == rank)
+                .filter(treasure -> treasure.getRank().equals(rank))
                 .collect(Collectors.toList());
     }
 

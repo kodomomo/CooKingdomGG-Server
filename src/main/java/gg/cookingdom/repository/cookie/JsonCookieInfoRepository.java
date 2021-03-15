@@ -46,16 +46,22 @@ public class JsonCookieInfoRepository implements CookieInfoRepository {
 
     @Override
     public List<Cookie> getCookieByTier(Integer tier) {
-        return null;
+        return cookies.stream()
+                .filter(cookie -> cookie.getTier().equals(tier))
+                .collect(Collectors.toList());
     }
 
     @Override
     public List<Cookie> getCookieByMajor(CookieMajor major) {
-        return null;
+        return cookies.stream()
+                .filter(cookie -> cookie.getMajor().equals(major))
+                .collect(Collectors.toList());
     }
 
     @Override
     public List<Cookie> getCookieByPosition(CookiePosition position) {
-        return null;
+        return cookies.stream()
+                .filter(cookie -> cookie.getPosition().equals(position))
+                .collect(Collectors.toList());
     }
 }
