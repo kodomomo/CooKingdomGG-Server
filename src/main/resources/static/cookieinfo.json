@@ -40,6 +40,16 @@
   },
 
   {
+    "name": "블루베리맛 쿠키",
+    "rank": "RARE",
+    "tier" : 4,
+    "major": "WIZARD",
+    "position": "REAR",
+    "topping" : "초콜릿칩",
+    "description": ""
+  },
+
+  {
     "name": "마법사맛 쿠키",
     "rank": "NORMAL",
     "tier" : 5,
@@ -130,6 +140,36 @@
   },
 
   {
+    "name" : "아보카도맛 쿠키",
+    "rank" : "RARE",
+    "tier" : 4,
+    "major" : "DEFENSE",
+    "position" : "FRONT",
+    "topping" : "아몬드",
+    "description" : ""
+  },
+
+  {
+    "name" : "공주맛 쿠키",
+    "rank" : "RARE",
+    "tier" : 4,
+    "major" : "DEFENSE",
+    "position" : "FRONT",
+    "topping" : "아몬드",
+    "description" : ""
+  },
+
+  {
+    "name" : "기사맛 쿠키",
+    "rank" : "RARE",
+    "tier" : 4,
+    "major" : "DEFENSE",
+    "position" : "FRONT",
+    "topping" : "아몬드",
+    "description" : ""
+  },
+
+  {
     "name" : "딸기맛 쿠키",
     "rank" : "NORMAL",
     "tier" : 5,
@@ -156,6 +196,26 @@
     "major" : "RECOVERY",
     "position" : "REAR",
     "topping" : "라즈베리, 초콜릿칩",
+    "description" : ""
+  },
+
+  {
+    "name" : "커스터드3세맛 쿠키",
+    "rank" : "RARE",
+    "tier" : 3,
+    "major" : "RECOVERY",
+    "position" : "REAR",
+    "topping" : "라즈베리",
+    "description" : ""
+  },
+
+  {
+    "name" : "양파맛 쿠키",
+    "rank" : "NORMAL",
+    "tier" : 4,
+    "major" : "RECOVERY",
+    "position" : "CENTER",
+    "topping" : "라즈베리",
     "description" : ""
   },
 
@@ -190,12 +250,32 @@
   },
 
   {
+    "name" : "클로버맛 쿠키",
+    "rank" : "RARE",
+    "tier" : 4,
+    "major" : "SUPPORT",
+    "position" : "REAR",
+    "topping" : "라즈베리, 초콜릿칩",
+    "description" : ""
+  },
+
+  {
     "name" : "민트초코맛 쿠키",
     "rank" : "EPIC",
     "tier" : 3,
     "major" : "SUPPORT",
     "position" : "REAR",
     "topping" : "초콜릿칩",
+    "description" : ""
+  },
+
+  {
+    "name" : "당근맛 쿠키",
+    "rank" : "RARE",
+    "tier" : 4,
+    "major" : "SUPPORT",
+    "position" : "CENTER",
+    "topping" : "라즈베리",
     "description" : ""
   },
 
@@ -216,6 +296,26 @@
     "major" : "PENETRATION",
     "position" : "CENTER",
     "topping" : "라즈베리",
+    "description" : ""
+  },
+
+  {
+    "name" : "탐험가맛 쿠키",
+    "rank" : "RARE",
+    "tier" : 4,
+    "major" : "PENETRATION",
+    "position" : "CENTER",
+    "topping" : "초콜릿칩",
+    "description" : ""
+  },
+
+  {
+    "name" : "팬케이크맛 쿠키",
+    "rank" : "RARE",
+    "tier" : 4,
+    "major" : "PENETRATION",
+    "position" : "REAR",
+    "topping" : "초콜릿칩",
     "description" : ""
   },
 
@@ -267,5 +367,36 @@
     "position" : "CENTER",
     "topping" : "라즈베리, 초콜릿칩",
     "description" : ""
+  },
+
+  {
+    "name" : "체리맛 쿠키",
+    "rank" : "RARE",
+    "tier" : 4,
+    "major" : "EXPLOSION",
+    "position" : "REAR",
+    "topping" : "초콜릿칩",
+    "description" : ""
+  },
+
+  {
+    "name" : "연금술사맛 쿠키",
+    "rank" : "RARE",
+    "tier" : 4,
+    "major" : "EXPLOSION",
+    "position" : "CENTER",
+    "topping" : "초콜릿칩",
+    "description" : ""
+  },
+
+  {
+    "name" : "버블껌맛 쿠키",
+    "rank" : "RARE",
+    "tier" : 4,
+    "major" : "EXPLOSION",
+    "position" : "REAR",
+    "topping" : "초콜릿칩",
+    "description" : ""
   }
+
 ]
