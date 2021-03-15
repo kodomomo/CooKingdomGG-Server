@@ -9,13 +9,15 @@ import org.json.simple.parser.JSONParser;
 import org.springframework.stereotype.Repository;
 
 import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Repository
 public class JsonTreasureInfoRepository implements TreasureInfoRepository{
 
-    private final List<Treasure> treasures;
+    private List<Treasure> treasures = new ArrayList<>();
 
     @SneakyThrows
     public JsonTreasureInfoRepository() {
@@ -25,13 +27,24 @@ public class JsonTreasureInfoRepository implements TreasureInfoRepository{
 
         JSONArray jsonObject = (JSONArray) obj;
         ObjectMapper mapper = new ObjectMapper();
-        this.treasures = mapper.readValue(jsonObject.toJSONString(), List.class);
+        List<LinkedHashMap<String, ?>> list = mapper.readValue(jsonObject.toJSONString(), List.class);
+
+        for (LinkedHashMap map : list) {
+            treasures.add(
+                    Treasure.builder()
+                        .name((String) map.get("name"))
+                        .rank(Rank.valueOf((String) map.get("rank")))
+                        .effect((String) map.get("effect"))
+                        .description((String) map.get("description"))
+                        .build()
+            );
+        }
     }
 
     @Override
     public List<Treasure> getTreasureByName(String name) {
         return treasures.stream()
-                .filter(treasure -> treasure.getName().equals(name))
+                .filter(treasure -> treasure.getName().contains(name))
                 .collect(Collectors.toList());
     }
 
