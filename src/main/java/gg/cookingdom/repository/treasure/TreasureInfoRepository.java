@@ -8,5 +8,5 @@ import java.util.List;
 public interface TreasureInfoRepository {
     List<Treasure> getTreasureByName(String name);
     List<Treasure> getTreasureByRank(Rank rank);
-    List<Treasure> getTreasureBy(String effect);
+    List<Treasure> getTreasureByEffect(String effect);
 }
