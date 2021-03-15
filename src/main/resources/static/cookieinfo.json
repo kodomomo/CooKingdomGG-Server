@@ -1,0 +1,271 @@
+[
+  {
+    "name": "에스프레소맛 쿠키",
+    "rank": "EPIC",
+    "tier" : 1,
+    "major": "WIZARD",
+    "position": "CENTER",
+    "topping" : "라즈베리",
+    "description": ""
+  },
+
+  {
+    "name" : "라떼맛 쿠키",
+    "rank": "EPIC",
+    "tier" : 1,
+    "major" : "WIZARD",
+    "position" : "CENTER",
+    "topping" : "라즈베리, 초콜릿칩",
+    "description" : ""
+  },
+
+  {
+    "name" : "감초맛 쿠키",
+    "rank" : "EPIC",
+    "tier" : 1,
+    "major" : "WIZARD",
+    "position" : "CENTER",
+    "topping" : "초콜릿칩",
+    "description" : ""
+  },
+
+  {
+    "name" : "눈설탕맛 쿠키",
+    "rank" : "EPIC",
+    "tier" : 3,
+    "major" : "WIZARD",
+    "position" : "CENTER",
+    "topping" : "초콜릿칩",
+    "description" : ""
+  },
+
+  {
+    "name": "마법사맛 쿠키",
+    "rank": "NORMAL",
+    "tier" : 5,
+    "major": "WIZARD",
+    "position": "CENTER",
+    "topping" : "",
+    "description": ""
+  },
+
+  {
+    "name" : "다크초코맛 쿠키",
+    "rank": "EPIC",
+    "tier" : 1,
+    "major" : "CHARGE",
+    "position" : "FRONT",
+    "topping" : "아몬드, 호두",
+    "description" : ""
+  },
+
+  {
+    "name" : "구미호맛 쿠키",
+    "rank" : "EPIC",
+    "tier" : 2,
+    "major" : "CHARGE",
+    "position" : "FRONT",
+    "topping" : "초콜릿칩",
+    "description" : ""
+  },
+
+  {
+    "name" : "자색고구마맛 쿠키",
+    "rank" : "EPIC",
+    "tier" : 3,
+    "major" : "CHARGE",
+    "position" : "FRONT",
+    "topping" : "호두, 아몬드",
+    "description" : ""
+  },
+
+  {
+    "name" : "웨어울프맛 쿠키",
+    "rank" : "EPIC",
+    "tier" : 3,
+    "major" : "CHARGE",
+    "position" : "FRONT",
+    "topping" : "호두, 아몬드",
+    "description" : ""
+  },
+
+  {
+    "name" : "용감한 쿠키",
+    "rank" :  "NORMAL",
+    "tier" : 5,
+    "major" : "CHARGE",
+    "position" : "FRONT",
+    "topping" : "",
+    "description" : ""
+  },
+
+  {
+    "name" : "근육맛 쿠키",
+    "rank" :  "NORMAL",
+    "tier" : 5,
+    "major" : "CHARGE",
+    "position" : "FRONT",
+    "topping" : "",
+    "description" : ""
+  },
+
+  {
+    "name" : "우유맛 쿠키",
+    "rank": "EPIC",
+    "tier" : 2,
+    "major" : "DEFENSE",
+    "position" : "FRONT",
+    "topping" : "아몬드, 호두",
+    "description" : ""
+  },
+
+  {
+    "name" : "마들렌맛 쿠키",
+    "rank" : "EPIC",
+    "tier" : 2,
+    "major" : "DEFENSE",
+    "position" : "FRONT",
+    "topping" : "캐러멜, 호두, 아몬드",
+    "description" : ""
+  },
+
+  {
+    "name" : "딸기맛 쿠키",
+    "rank" : "NORMAL",
+    "tier" : 5,
+    "major" : "DEFENSE",
+    "position" : "FRONT",
+    "topping" : "",
+    "description" : ""
+  },
+
+  {
+    "name" : "허브맛 쿠키",
+    "rank": "EPIC",
+    "tier" : 1,
+    "major" : "RECOVERY",
+    "position" : "REAR",
+    "topping" : "라즈베리, 초콜릿칩",
+    "description" : ""
+  },
+
+  {
+    "name" : "스파클링맛 쿠키",
+    "rank" : "EPIC",
+    "tier" : 2,
+    "major" : "RECOVERY",
+    "position" : "REAR",
+    "topping" : "라즈베리, 초콜릿칩",
+    "description" : ""
+  },
+
+  {
+    "name" : "천사맛 쿠키",
+    "rank" : "NORMAL",
+    "tier" : 5,
+    "major" : "RECOVERY",
+    "position" : "REAR",
+    "topping" : "",
+    "description" : ""
+  },
+
+  {
+    "name" : "석류맛 쿠키",
+    "rank" : "EPIC",
+    "tier" : 1,
+    "major" : "SUPPORT",
+    "position" : "REAR",
+    "topping" : "초콜릿칩",
+    "description" : ""
+  },
+
+  {
+    "name" : "슈크림맛 쿠키",
+    "rank" : "EPIC",
+    "tier" : 2,
+    "major" : "SUPPORT",
+    "position" : "REAR",
+    "topping" : "라즈베리",
+    "description" : ""
+  },
+
+  {
+    "name" : "민트초코맛 쿠키",
+    "rank" : "EPIC",
+    "tier" : 3,
+    "major" : "SUPPORT",
+    "position" : "REAR",
+    "topping" : "초콜릿칩",
+    "description" : ""
+  },
+
+  {
+    "name" : "뱀파이어맛 쿠키",
+    "rank": "EPIC",
+    "tier" : 1,
+    "major" : "PENETRATION",
+    "position" : "REAR",
+    "topping" : "라즈베리",
+    "description" : ""
+  },
+
+  {
+    "name" : "칠리맛 쿠키",
+    "rank" : "EPIC",
+    "tier" : 3,
+    "major" : "PENETRATION",
+    "position" : "CENTER",
+    "topping" : "라즈베리",
+    "description" : ""
+  },
+
+  {
+    "name" : "닌자맛 쿠키",
+    "rank" : "NORMAL",
+    "tier" : 5,
+    "major" : "PENETRATION",
+    "position" : "CENTER",
+    "topping" : "",
+    "description" : ""
+  },
+
+  {
+    "name" : "호밀맛 쿠키",
+    "rank": "EPIC",
+    "tier" : 1,
+    "major" : "OBLIQUE_CASE",
+    "position" : "REAR",
+    "topping" : "라즈베리",
+    "description" : ""
+  },
+
+  {
+    "name" : "정글전사맛 쿠키",
+    "rank" : "EPIC",
+    "tier" : 2,
+    "major" : "OBLIQUE_CASE",
+    "position" : "REAR",
+    "topping" : "초콜릿칩",
+    "description" : ""
+  },
+
+  {
+    "name" : "비트맛 쿠키",
+    "rank" : "NORMAL",
+    "tier" : 5,
+    "major" : "OBLIQUE_CASE",
+    "position" : "REAR",
+    "topping" : "",
+    "description" : ""
+  },
+
+  {
+    "name" : "독버섯맛 쿠키",
+    "rank" : "EPIC",
+    "tier" : 3,
+    "major" : "EXPLOSION",
+    "position" : "CENTER",
+    "topping" : "라즈베리, 초콜릿칩",
+    "description" : ""
+  }
+]
