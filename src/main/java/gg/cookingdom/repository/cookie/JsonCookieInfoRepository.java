@@ -10,14 +10,17 @@ import org.json.simple.JSONArray;
 import org.json.simple.parser.JSONParser;
 import org.springframework.stereotype.Repository;
 
+import javax.swing.text.Position;
 import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Repository
 public class JsonCookieInfoRepository implements CookieInfoRepository {
 
-    private final List<Cookie> cookies;
+    private List<Cookie> cookies = new ArrayList<>();
 
     @SneakyThrows
     public JsonCookieInfoRepository() {
@@ -27,7 +30,20 @@ public class JsonCookieInfoRepository implements CookieInfoRepository {
 
         JSONArray jsonObject = (JSONArray) obj;
         ObjectMapper mapper = new ObjectMapper();
-        this.cookies = mapper.readValue(jsonObject.toJSONString(), List.class);
+        List<LinkedHashMap<String, ?>> list = mapper.readValue(jsonObject.toJSONString(), List.class);
+        for (LinkedHashMap map : list) {
+            cookies.add(
+                    Cookie.builder()
+                        .name((String) map.get("name"))
+                        .rank(Rank.valueOf((String) map.get("rank")))
+                        .tier((Integer) map.get("tier"))
+                        .major(CookieMajor.valueOf((String) map.get("major")))
+                        .position(CookiePosition.valueOf((String) map.get("position")))
+                        .topping((String) map.get("topping"))
+                        .description((String) map.get("description"))
+                        .build()
+            );
+        }
     }
 
     @Override
