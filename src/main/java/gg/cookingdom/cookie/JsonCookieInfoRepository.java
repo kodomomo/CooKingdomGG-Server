@@ -1,4 +1,4 @@
-package gg.cookingdom;
+package gg.cookingdom.cookie;
 
 import org.springframework.stereotype.Repository;
 
@@ -12,7 +12,7 @@ public class JsonCookieInfoRepository implements CookieInfoRepository {
     }
 
     @Override
-    public List<Cookie> getCookieByRank(CookieRank rank) {
+    public List<Cookie> getCookieByRank(Rank rank) {
         return null;
     }
 

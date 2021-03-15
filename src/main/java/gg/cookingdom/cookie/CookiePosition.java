@@ -1,4 +1,4 @@
-package gg.cookingdom;
+package gg.cookingdom.cookie;
 
 public enum  CookiePosition {
     FRONT,CENTER,REAR
