@@ -37,11 +37,15 @@ public class JsonTreasureInfoRepository implements TreasureInfoRepository{
 
     @Override
     public List<Treasure> getTreasureByRank(Rank rank) {
-        return null;
+        return treasures.stream()
+                .filter(treasure -> treasure.getRank() == rank)
+                .collect(Collectors.toList());
     }
 
     @Override
     public List<Treasure> getTreasureBy(String effect) {
-        return null;
+        return treasures.stream()
+                .filter(treasure -> treasure.getEffect().contains(effect))
+                .collect(Collectors.toList());
     }
 }
