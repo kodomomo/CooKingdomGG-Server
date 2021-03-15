@@ -43,7 +43,7 @@ public class JsonTreasureInfoRepository implements TreasureInfoRepository{
     }
 
     @Override
-    public List<Treasure> getTreasureBy(String effect) {
+    public List<Treasure> getTreasureByEffect(String effect) {
         return treasures.stream()
                 .filter(treasure -> treasure.getEffect().contains(effect))
                 .collect(Collectors.toList());
