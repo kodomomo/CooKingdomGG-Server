@@ -6,7 +6,7 @@ import gg.cookingdom.enums.CookieMajor;
 import gg.cookingdom.enums.CookiePosition;
 import gg.cookingdom.enums.Rank;
 import lombok.SneakyThrows;
-import org.json.simple.JSONObject;
+import org.json.simple.JSONArray;
 import org.json.simple.parser.JSONParser;
 import org.springframework.stereotype.Repository;
 
@@ -23,9 +23,9 @@ public class JsonCookieInfoRepository implements CookieInfoRepository {
     public JsonCookieInfoRepository() {
         JSONParser parser = new JSONParser();
         Object obj = parser.parse(new FileReader(
-                getClass().getResource("static/cookieinfo.json").getPath()));
+                getClass().getResource("/static/cookieinfo.json").getPath()));
 
-        JSONObject jsonObject = (JSONObject) obj;
+        JSONArray jsonObject = (JSONArray) obj;
         ObjectMapper mapper = new ObjectMapper();
         this.cookies = mapper.readValue(jsonObject.toJSONString(), List.class);
     }
