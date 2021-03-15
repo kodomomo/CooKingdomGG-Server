@@ -1,8 +1,8 @@
 package gg.cookingdom.repository.treasure;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import gg.cookingdom.enums.Rank;
 import gg.cookingdom.dto.treasure.Treasure;
+import gg.cookingdom.enums.Rank;
 import lombok.SneakyThrows;
 import org.json.simple.JSONArray;
 import org.json.simple.parser.JSONParser;
