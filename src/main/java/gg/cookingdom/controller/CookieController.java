@@ -7,13 +7,11 @@ import gg.cookingdom.enums.Rank;
 import gg.cookingdom.repository.cookie.CookieInfoRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Controller
+@RestController
 @RequestMapping("/cookie")
 @RequiredArgsConstructor
 public class CookieController {
