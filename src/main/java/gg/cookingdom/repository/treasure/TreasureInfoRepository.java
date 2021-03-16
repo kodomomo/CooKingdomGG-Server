@@ -1,7 +1,7 @@
 package gg.cookingdom.repository.treasure;
 
 import gg.cookingdom.enums.Rank;
-import gg.cookingdom.dto.treasure.Treasure;
+import gg.cookingdom.dto.Treasure;
 
 import java.util.List;
 

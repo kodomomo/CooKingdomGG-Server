@@ -1,4 +1,4 @@
-package gg.cookingdom.dto.combination;
+package gg.cookingdom.dto;
 
 import gg.cookingdom.enums.CombinationType;
 import lombok.AllArgsConstructor;

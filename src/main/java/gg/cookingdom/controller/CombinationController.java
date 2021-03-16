@@ -1,6 +1,6 @@
 package gg.cookingdom.controller;
 
-import gg.cookingdom.dto.combination.Combination;
+import gg.cookingdom.dto.Combination;
 import gg.cookingdom.enums.CombinationType;
 import gg.cookingdom.repository.combination.CombinationInfoRepository;
 import lombok.RequiredArgsConstructor;

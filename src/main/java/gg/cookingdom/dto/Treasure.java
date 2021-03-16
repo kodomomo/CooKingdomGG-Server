@@ -1,7 +1,5 @@
-package gg.cookingdom.dto.cookie;
+package gg.cookingdom.dto;
 
-import gg.cookingdom.enums.CookieMajor;
-import gg.cookingdom.enums.CookiePosition;
 import gg.cookingdom.enums.Rank;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,12 +10,9 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Cookie {
+public class Treasure {
     private String name;
     private Rank rank;
-    private Integer tier;
-    private CookieMajor major;
-    private CookiePosition position;
-    private String topping;
+    private String effect;
     private String description;
 }

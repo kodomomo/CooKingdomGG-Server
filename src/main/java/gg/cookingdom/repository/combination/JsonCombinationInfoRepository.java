@@ -1,7 +1,7 @@
 package gg.cookingdom.repository.combination;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import gg.cookingdom.dto.combination.Combination;
+import gg.cookingdom.dto.Combination;
 import gg.cookingdom.enums.CombinationType;
 import lombok.SneakyThrows;
 import org.json.simple.JSONArray;
@@ -42,7 +42,7 @@ public class JsonCombinationInfoRepository implements CombinationInfoRepository{
 
     @Override
     public List<Combination> getCombination() {
-        return new ArrayList<>(combination);
+        return combination;
     }
 
     @Override

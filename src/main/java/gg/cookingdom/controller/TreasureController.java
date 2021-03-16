@@ -1,6 +1,6 @@
 package gg.cookingdom.controller;
 
-import gg.cookingdom.dto.treasure.Treasure;
+import gg.cookingdom.dto.Treasure;
 import gg.cookingdom.enums.Rank;
 import gg.cookingdom.repository.treasure.TreasureInfoRepository;
 import lombok.RequiredArgsConstructor;

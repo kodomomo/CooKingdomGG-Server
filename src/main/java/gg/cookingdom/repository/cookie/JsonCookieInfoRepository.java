@@ -1,7 +1,7 @@
 package gg.cookingdom.repository.cookie;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import gg.cookingdom.dto.cookie.Cookie;
+import gg.cookingdom.dto.Cookie;
 import gg.cookingdom.enums.CookieMajor;
 import gg.cookingdom.enums.CookiePosition;
 import gg.cookingdom.enums.Rank;
