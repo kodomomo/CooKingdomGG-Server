@@ -16,4 +16,5 @@ public class Combination {
     private CombinationType type;
     private List<String> cookie;
     private List<String> treasure;
+    private List<String> substitution;
 }
