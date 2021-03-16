@@ -6,7 +6,6 @@ import gg.cookingdom.enums.CookiePosition;
 import gg.cookingdom.enums.Rank;
 import gg.cookingdom.repository.cookie.CookieInfoRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,6 +16,11 @@ import java.util.List;
 public class CookieController {
 
     private final CookieInfoRepository cookieRepository;
+
+    @GetMapping
+    public List<Cookie> getCookies() {
+        return cookieRepository.getCookies();
+    }
 
     @GetMapping("/name")
     public List<Cookie> getByName(@RequestParam String name) {
