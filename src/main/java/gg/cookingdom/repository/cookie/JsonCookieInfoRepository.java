@@ -11,9 +11,7 @@ import org.json.simple.parser.JSONParser;
 import org.springframework.stereotype.Repository;
 
 import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Repository
@@ -47,6 +45,7 @@ public class JsonCookieInfoRepository implements CookieInfoRepository {
 
     @Override
     public List<Cookie> getCookies() {
+        Collections.sort(cookies, Comparator.comparing(Cookie::getName));
         return cookies;
     }
 
