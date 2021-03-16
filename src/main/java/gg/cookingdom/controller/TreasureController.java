@@ -18,6 +18,11 @@ public class TreasureController {
 
     private final TreasureInfoRepository treasureRepository;
 
+    @GetMapping
+    public List<Treasure> getTreasures() {
+        return treasureRepository.getTreasures();
+    }
+    
     @GetMapping("/name")
     public List<Treasure> getByName(@RequestParam String name) {
         return treasureRepository.getTreasureByName(name);
