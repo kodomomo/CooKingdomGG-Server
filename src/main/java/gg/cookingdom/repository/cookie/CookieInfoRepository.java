@@ -8,6 +8,7 @@ import gg.cookingdom.enums.Rank;
 import java.util.List;
 
 public interface CookieInfoRepository {
+    List<Cookie> getCookies();
     List<Cookie> getCookieByName(String name);
     List<Cookie> getCookieByRank(Rank rank);
     List<Cookie> getCookieByTier(Integer tier);

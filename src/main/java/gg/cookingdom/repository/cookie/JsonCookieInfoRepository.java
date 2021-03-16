@@ -10,7 +10,6 @@ import org.json.simple.JSONArray;
 import org.json.simple.parser.JSONParser;
 import org.springframework.stereotype.Repository;
 
-import javax.swing.text.Position;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -44,6 +43,11 @@ public class JsonCookieInfoRepository implements CookieInfoRepository {
                         .build()
             );
         }
+    }
+
+    @Override
+    public List<Cookie> getCookies() {
+        return cookies;
     }
 
     @Override
