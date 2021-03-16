@@ -42,6 +42,11 @@ public class JsonTreasureInfoRepository implements TreasureInfoRepository{
     }
 
     @Override
+    public List<Treasure> getTreasures() {
+        return treasures;
+    }
+
+    @Override
     public List<Treasure> getTreasureByName(String name) {
         return treasures.stream()
                 .filter(treasure -> treasure.getName().contains(name))
