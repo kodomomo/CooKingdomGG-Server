@@ -34,6 +34,7 @@ public class JsonCombinationInfoRepository implements CombinationInfoRepository{
                         .type(CombinationType.valueOf((String) map.get("type")))
                         .cookie((List<String>) map.get("cookie"))
                         .treasure((List<String>) map.get("treasure"))
+                        .substitution((List<String>) map.get("substitution"))
                         .build()
             );
         }
