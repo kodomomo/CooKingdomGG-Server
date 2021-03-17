@@ -43,11 +43,11 @@ public class JsonCookieInfoRepository implements CookieInfoRepository {
                         .build()
             );
         }
+        Collections.sort(cookies, Comparator.comparing(Cookie::getName));
     }
 
     @Override
     public List<Cookie> getCookies() {
-        Collections.sort(cookies, Comparator.comparing(Cookie::getName));
         return cookies;
     }
 

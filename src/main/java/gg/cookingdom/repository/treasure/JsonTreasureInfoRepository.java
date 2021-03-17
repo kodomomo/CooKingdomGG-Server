@@ -9,9 +9,7 @@ import org.json.simple.parser.JSONParser;
 import org.springframework.stereotype.Repository;
 
 import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Repository
@@ -39,6 +37,7 @@ public class JsonTreasureInfoRepository implements TreasureInfoRepository{
                         .build()
             );
         }
+        Collections.sort(treasures, Comparator.comparing(Treasure::getName));
     }
 
     @Override
