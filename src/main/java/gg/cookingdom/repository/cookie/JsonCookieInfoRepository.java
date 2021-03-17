@@ -37,7 +37,9 @@ public class JsonCookieInfoRepository implements CookieInfoRepository {
                         .major(CookieMajor.valueOf((String) map.get("major")))
                         .position(CookiePosition.valueOf((String) map.get("position")))
                         .topping((String) map.get("topping"))
-                        .description((String) map.get("description"))
+                        .skillName((String) map.get("skill_name"))
+                        .skillDescription((String) map.get("skill_description"))
+                        .coolTime((Double) map.get("cool_time"))
                         .build()
             );
         }
