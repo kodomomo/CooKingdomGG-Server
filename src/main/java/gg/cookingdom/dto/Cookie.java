@@ -19,5 +19,7 @@ public class Cookie {
     private CookieMajor major;
     private CookiePosition position;
     private String topping;
-    private String description;
+    private String skillName;
+    private String skillDescription;
+    private Double coolTime;
 }
