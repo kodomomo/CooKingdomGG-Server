@@ -1,0 +1,617 @@
+[
+  {
+    "name": "에스프레소맛 쿠키",
+    "rank": "EPIC",
+    "tier" : 1,
+    "major": "WIZARD",
+    "position": "CENTER",
+    "topping" : "라즈베리",
+    "skill_name" : "그라인딩",
+    "skill_description" : "좋은 커피는 원두를 곱게 가는 것에서 시작된다! 거대한 회오리날이 멀리있는 적들에게까지 여러 차례 범위피해를 입히고 마법의 중심으로 빨아들인다.",
+    "cool_time" : 15.0,
+    "cookie_image_url" : "epic_espresso.png",
+    "skill_image_url" : "epic_espresso_skill.png",
+    "major_image_url" : "Major_WIZARD.png"
+  },
+
+  {
+    "name" : "라떼맛 쿠키",
+    "rank": "EPIC",
+    "tier" : 1,
+    "major" : "WIZARD",
+    "position" : "CENTER",
+    "topping" : "라즈베리, 초콜릿칩",
+    "skill_name" : "따뜻한 라떼 한 잔",
+    "skill_description" : "라떼마법진을 그려 적들을 모아 피해를 주고 침묵 상태를 부여한다. 마법진은 그 자리에 남아 지속 대미지를 입히며 진한 맛이 나는 중앙부는 더 큰 피해를 준다.",
+    "cool_time" : 15.0,
+    "cookie_image_url" : "epic_latte.png",
+    "skill_image_url" : "epic_latte_skill.png",
+    "major_image_url" : "Major_WIZARD.png"
+  },
+
+  {
+    "name" : "감초맛 쿠키",
+    "rank" : "EPIC",
+    "tier" : 1,
+    "major" : "WIZARD",
+    "position" : "CENTER",
+    "topping" : "초콜릿칩",
+    "skill_name" : "해골 부르기",
+    "skill_description" : "검은 번개의 환영으로 큰 피해와 함께 감초젤리 해골이 소환된다. 강력한 주술로 잠시 동안 아군의 방어력이 증가한다.",
+    "cool_time" : 14.0,
+    "cookie_image_url" : "epic_licorice.png",
+    "skill_image_url" : "epic_licorice_skill.png",
+    "major_image_url" : "Major_WIZARD.png"
+  },
+
+  {
+    "name" : "눈설탕맛 쿠키",
+    "rank" : "EPIC",
+    "tier" : 3,
+    "major" : "WIZARD",
+    "position" : "CENTER",
+    "topping" : "초콜릿칩",
+    "skill_name" : "눈보라 치는 날",
+    "skill_description" : "눈꽃 소환봉을 휘두르면 나타나는 충실한 친구 스노우킹! 스노우킹은 눈보라를 뿜어 지속적인 범위 피해를 입힌다. 꽁꽁 얼어버린 적들은 공격 속도가 감소한다.",
+    "cool_time" : 20.0,
+    "cookie_image_url" : "epic_snow_sugar.png",
+    "skill_image_url" : "epic_snow_sugar_skill.png",
+    "major_image_url" : "Major_WIZARD.png"
+  },
+
+  {
+    "name": "블루베리맛 쿠키",
+    "rank": "RARE",
+    "tier" : 4,
+    "major": "WIZARD",
+    "position": "REAR",
+    "topping" : "초콜릿칩",
+    "skill_name" : "당신 뒤의 유령",
+    "skill_description" : "꼬마 유령들이 우르르! 동시에 아군의 치명타 확률이 상승한다. 유령들은 적들 사이에서 왔다 갔다 하며 여러번의 피해를 준다. 모든 적을 공격하고 아군의 치명타 확률을 높여준다.",
+    "cool_time" : 15.0,
+    "cookie_image_url" : "rare_blackberry.png",
+    "skill_image_url" : "rare_blackberry_skill.png",
+    "major_image_url" : "Major_WIZARD.png"
+  },
+
+  {
+    "name": "마법사맛 쿠키",
+    "rank": "NORMAL",
+    "tier" : 5,
+    "major": "WIZARD",
+    "position": "CENTER",
+    "topping" : "",
+    "skill_name" : "번개구름 소환",
+    "skill_description" : "마법진 위로 짜릿짜릿한 번개구름을 소환한다. 번개구름은 전진하며 마법진 위의 적에게 낙뢰를 뿌려 지속적인 범위 피해를 입힌다.",
+    "cool_time" : 13.0,
+    "cookie_image_url" : "normal_wizard.png",
+    "skill_image_url" : "normal_wizard_skill.png",
+    "major_image_url" : "Major_WIZARD.png"
+  },
+
+  {
+    "name" : "다크초코맛 쿠키",
+    "rank": "EPIC",
+    "tier" : 1,
+    "major" : "CHARGE",
+    "position" : "FRONT",
+    "topping" : "아몬드, 호두",
+    "skill_name" : "어둠의 검격",
+    "skill_description" : "대검을 땅에 내려찍으면 번개가 연쇄적으로 퍼져나간다. 이 금지된 마법에 노출된 운 없는 적들은 큰 피해를 입고 잠시 동안 방어력이 떨어진다.",
+    "cool_time" : 13.0,
+    "cookie_image_url" : "epic_dark_choco.png",
+    "skill_image_url" : "epic_dark_choco_skill.png",
+    "major_image_url" : "Major_CHARGE.png"
+  },
+
+  {
+    "name" : "구미호맛 쿠키",
+    "rank" : "EPIC",
+    "tier" : 2,
+    "major" : "CHARGE",
+    "position" : "FRONT",
+    "topping" : "초콜릿칩",
+    "skill_name" : "재주 넘기",
+    "skill_description" : "쿠키로 변신해 자신 주변에 범위 피해를 주고 매혹 디버프를 건다. 여우불을 날려 더 강한 원거리 공격을 하다 잠시 후 다시 여우 형태로 돌아간다.",
+    "cool_time" : 14.0,
+    "cookie_image_url" : "epic_kumiho.png",
+    "skill_image_url" : "epic_kumiho_skill.png",
+    "major_image_url" : "Major_CHARGE.png"
+  },
+
+  {
+    "name" : "자색고구마맛 쿠키",
+    "rank" : "EPIC",
+    "tier" : 3,
+    "major" : "CHARGE",
+    "position" : "FRONT",
+    "topping" : "호두, 아몬드",
+    "skill_name" : "자색 토네이도",
+    "skill_description" : "전장을 토네이도처럼 휩쓰는 필살의 고구마 곤봉 연타! 주위에 지속적인 범위 피해를 크게 입힌다.",
+    "cool_time" : 12.0,
+    "cookie_image_url" : "epic_purple_yam.png",
+    "skill_image_url" : "epic_purple_yam_skill.png",
+    "major_image_url" : "Major_CHARGE.png"
+  },
+
+  {
+    "name" : "웨어울프맛 쿠키",
+    "rank" : "EPIC",
+    "tier" : 3,
+    "major" : "CHARGE",
+    "position" : "FRONT",
+    "topping" : "호두, 아몬드",
+    "skill_name" : "각성",
+    "skill_description" : "거친 몸부림으로 범위 피해를 입히며 늑대로 변신한다. 각성하면 체력이 더 좋아지고, 날카로운 발톱으로 일반 공격보다 더 강하고 더 광범위한 2연타를 날린다.",
+    "cool_time" : 11.0,
+    "cookie_image_url" : "epic_werewolf.png",
+    "skill_image_url" : "epic_werewolf_skill.png",
+    "major_image_url" : "Major_CHARGE.png"
+  },
+
+  {
+    "name" : "용감한 쿠키",
+    "rank" :  "NORMAL",
+    "tier" : 5,
+    "major" : "CHARGE",
+    "position" : "FRONT",
+    "topping" : "",
+    "skill_name" : "용감한 돌격",
+    "skill_description" : "용감하게 돌진해 부딫히며 주변 범위에 피해를 입힌다.",
+    "cool_time" : 8.0,
+    "cookie_image_url" : "normal_brave.png",
+    "skill_image_url" : "normal_gingerbrave_skill.png",
+    "major_image_url" : "Major_CHARGE.png"
+  },
+
+  {
+    "name" : "근육맛 쿠키",
+    "rank" :  "NORMAL",
+    "tier" : 5,
+    "major" : "CHARGE",
+    "position" : "FRONT",
+    "topping" : "",
+    "skill_name" : "머슬킹 파워",
+    "skill_description" : "괴력을 발휘해 눈앞의 적에게 덤벨을 던진다! 던질 때와 떨어질 때의 충격이 반경을 휩쓴다.",
+    "cool_time" : 10.0,
+    "cookie_image_url" : "normal_muscle.png",
+    "skill_image_url" : "normal_muscle_skill.png",
+    "major_image_url" : "Major_CHARGE.png"
+  },
+
+  {
+    "name" : "우유맛 쿠키",
+    "rank": "EPIC",
+    "tier" : 2,
+    "major" : "DEFENSE",
+    "position" : "FRONT",
+    "topping" : "아몬드, 호두",
+    "skill_name" : "숭고한 희생",
+    "skill_description" : "앞장서서 범위 피해를 입힌 후 스스로에게 도발효과를 부여한다. 성스러운 우윳빛 방패를 들어올려 그동안 받는 피해를 감소시킨다.",
+    "cool_time" : 12.0,
+    "cookie_image_url" : "epic_milk.png",
+    "skill_image_url" : "epic_milk_skill.png",
+    "major_image_url" : "Major_DEFENSE.png"
+  },
+
+  {
+    "name" : "마들렌맛 쿠키",
+    "rank" : "EPIC",
+    "tier" : 2,
+    "major" : "DEFENSE",
+    "position" : "FRONT",
+    "topping" : "캐러멜, 호두, 아몬드",
+    "skill_name" : "기사단장의 후광",
+    "skill_description" : "천상의 빛을 받아 일반 공격을 광범위한 원거리 검기 공격으로 전환한다. 빛의 가호가 함께하는 동안 디버프가 면역이 된다.",
+    "cool_time" : 13.0,
+    "cookie_image_url" : "epic_madeleine.png",
+    "skill_image_url" : "epic_madeleine_skill.png",
+    "major_image_url" : "Major_DEFENSE.png"
+  },
+
+  {
+    "name" : "아보카도맛 쿠키",
+    "rank" : "RARE",
+    "tier" : 4,
+    "major" : "DEFENSE",
+    "position" : "FRONT",
+    "topping" : "아몬드",
+    "skill_name" : "대장장이 나가신다!",
+    "skill_description" : "망치를 내리쳐 담금질해 주변에 여러 번의 범위 피해를 입힌다! 경쾌한 망치 소리에 쿠키들의 사기도 샘솟는지 공격력이 가장 높은 쿠키는 공격력 증가 상태가 된다.",
+    "cool_time" : 13.0,
+    "cookie_image_url" : "rare_avocado.png",
+    "skill_image_url" : "rare_avocado_skill.png",
+    "major_image_url" : "Major_DEFENSE.png"
+  },
+
+  {
+    "name" : "공주맛 쿠키",
+    "rank" : "RARE",
+    "tier" : 4,
+    "major" : "DEFENSE",
+    "position" : "FRONT",
+    "topping" : "아몬드",
+    "skill_name" : "로얄케인 스윙",
+    "skill_description" : "마실 나온 공주의 호기심 넘치는 한방! 해맑은 얼굴로 강하게 지팡이를 휘둘러 범위 피해를 입힌다. 공격에 맞은 적의 방어력이 감소한다.",
+    "cool_time" : 13.0,
+    "cookie_image_url" : "rare_princess.png",
+    "skill_image_url" : "rare_princess_skill.png",
+    "major_image_url" : "Major_DEFENSE.png"
+  },
+
+  {
+    "name" : "용사맛 쿠키",
+    "rank" : "RARE",
+    "tier" : 4,
+    "major" : "DEFENSE",
+    "position" : "FRONT",
+    "topping" : "아몬드",
+    "skill_name" : "용맹한 질주",
+    "skill_description" : "용맹하게 앞장서 전방에 범위 피해를 입히고 자신에게 도발 효과를 부여한다.",
+    "cool_time" : 13.0,
+    "cookie_image_url" : "rare_knight.png",
+    "skill_image_url" : "rare_knight_skill.png",
+    "major_image_url" : "Major_DEFENSE.png"
+  },
+
+  {
+    "name" : "딸기맛 쿠키",
+    "rank" : "NORMAL",
+    "tier" : 5,
+    "major" : "DEFENSE",
+    "position" : "FRONT",
+    "topping" : "",
+    "skill_name" : "다가오지마...",
+    "skill_description" : "겁먹은 딸기맛 쿠키가 거대 롤리팝을 붙잡고 빙글빙글! 주변 범위에 지속적으로 피해를 입힌다.",
+    "cool_time" : 10.0,
+    "cookie_image_url" : "normal_strawberry.png",
+    "skill_image_url" : "normal_strawberry_skill.png",
+    "major_image_url" : "Major_DEFENSE.png"
+  },
+
+  {
+    "name" : "허브맛 쿠키",
+    "rank": "EPIC",
+    "tier" : 1,
+    "major" : "RECOVERY",
+    "position" : "REAR",
+    "topping" : "라즈베리, 초콜릿칩",
+    "skill_name" : "따스한 정원",
+    "skill_description" : "허브맛 쿠키와 함께라면 어디든 따스한 정원! 모든 쿠키들의 체력을 회복하고 디버프를 제거한다, 추가로 자라난 새싹이 체력을 점차 채워준다.",
+    "cool_time" : 17.0,
+    "cookie_image_url" : "epic_herb.png",
+    "skill_image_url" : "epic_herb_skill.png",
+    "major_image_url" : "Major_RECOVERY.png"
+  },
+
+  {
+    "name" : "스파클링맛 쿠키",
+    "rank" : "EPIC",
+    "tier" : 2,
+    "major" : "RECOVERY",
+    "position" : "REAR",
+    "topping" : "라즈베리, 초콜릿칩",
+    "skill_name" : "톡톡 스파클링 칵테일",
+    "skill_description" : "즉석 제조한 상큼한 칵테일로 체력 비율이 가장 낮은 아군 둘을 회복시킨다. 싱그러운 향기에 모두의 사기가 높아져 아군 전체의 치명타 확률도 증가한다.",
+    "cool_time" : 13.0,
+    "cookie_image_url" : "epic_sparkling.png",
+    "skill_image_url" : "epic_sparkling_skill.png",
+    "major_image_url" : "Major_RECOVERY.png"
+  },
+
+  {
+    "name" : "커스터드 3세맛 쿠키",
+    "rank" : "RARE",
+    "tier" : 3,
+    "major" : "RECOVERY",
+    "position" : "REAR",
+    "topping" : "라즈베리",
+    "skill_name" : "휼륭한 왕",
+    "skill_description" : "체력 비율이 가장 낮은 쿠키 둘을 골라 치료하고 잠시 동안 유지되는 보호막을 씌운다. 나는 훌륭한 왕이니까!",
+    "cool_time" : 16.0,
+    "cookie_image_url" : "rare_custard.png",
+    "skill_image_url" : "rare_custard_skill.png",
+    "major_image_url" : "Major_RECOVERY.png"
+  },
+
+  {
+    "name" : "양파맛 쿠키",
+    "rank" : "RARE",
+    "tier" : 4,
+    "major" : "RECOVERY",
+    "position" : "CENTER",
+    "topping" : "라즈베리",
+    "skill_name" : "눈물 폭풍",
+    "skill_description" : "일반 공격을 하지 않고 두려워한다. 두려움 정도에 비례하여 유달리 우렁찬 울음소리로 멀리까지 엄청난 범위 피해를 입히고 공격력을 감소시킨다.",
+    "cool_time" : 19.0,
+    "cookie_image_url" : "rare_onion.png",
+    "skill_image_url" : "rare_onion_skill.png",
+    "major_image_url" : "Major_RECOVERY.png"
+  },
+
+  {
+    "name" : "천사맛 쿠키",
+    "rank" : "NORMAL",
+    "tier" : 5,
+    "major" : "RECOVERY",
+    "position" : "REAR",
+    "topping" : "",
+    "skill_name" : "성스러운 천상의 빛",
+    "skill_description" : "쿠키들에게 축복을… 하늘로 잠시 뛰어올라 날개를 펼치면 아군 전체의 체력이 회복된다.",
+    "cool_time" : 15.0,
+    "cookie_image_url" : "normal_angel.png",
+    "skill_image_url" : "normal_angel_skill.png",
+    "major_image_url" : "Major_RECOVERY.png"
+  },
+
+  {
+    "name" : "석류맛 쿠키",
+    "rank" : "EPIC",
+    "tier" : 1,
+    "major" : "SUPPORT",
+    "position" : "REAR",
+    "topping" : "초콜릿칩",
+    "skill_name" : "석류 주술",
+    "skill_description" : "오싹한 주문도 우리 편일 땐 든든한 법! 붉은 주술을 사용하여 쿠키들의 체력을 조금씩 회복하고 잠시 동안 아군의 공격력이 증가한다.",
+    "cool_time" : 17.0,
+    "cookie_image_url" : "epic_pomegranate.png",
+    "skill_image_url" : "epic_pomegranate_skill.png",
+    "major_image_url" : "Major_SUPPORT.png"
+  },
+
+  {
+    "name" : "슈크림맛 쿠키",
+    "rank" : "EPIC",
+    "tier" : 2,
+    "major" : "SUPPORT",
+    "position" : "REAR",
+    "topping" : "라즈베리",
+    "skill_name" : "젤리우스 익스트리모스",
+    "skill_description" : "넓은 영역에 젤리 회오리가 휘몰아치며 범위 피해를 준다. 더불어 마법의 힘으로 아군 전체의 체력을 회복한다.",
+    "cool_time" : 18.0,
+    "cookie_image_url" : "epic_custard_cream.png",
+    "skill_image_url" : "epic_custard_cream_skill.png",
+    "major_image_url" : "Major_SUPPORT.png"
+  },
+
+  {
+    "name" : "아몬드맛 쿠키",
+    "rank" : "EPIC",
+    "tier" : 2,
+    "major" : "SUPPORT",
+    "position" : "REAR",
+    "topping" : "",
+    "skill_name" : "마법의 아몬드 수갑",
+    "skill_description" : "마법 수갑을 휘둘러 소환수를 제외한 최대 체력이 가장 낮은 적을 붙잡아 연결된 대상들에게 피해의 일정 비율을 전달하는 확산 디버프를 적용한다. 스킬 시전 시 집중하여 스킬 끊김에 강해진다.",
+    "cool_time" : 15.0,
+    "cookie_image_url" : "epic_almond.png",
+    "skill_image_url" : "epic_almond_skill.png",
+    "major_image_url" : "Major_SUPPORT.png"
+  },
+
+  {
+    "name" : "민트초코 쿠키",
+    "rank" : "EPIC",
+    "tier" : 3,
+    "major" : "SUPPORT",
+    "position" : "REAR",
+    "topping" : "초콜릿칩",
+    "skill_name" : "전장의 바이올리니스트",
+    "skill_description" : "감미로운 멜로디로 쿠키들을 응원해 아군 전체의 체력을 어느 정도 회복시키고 공격 속도를 증가시킨다.",
+    "cool_time" : 16.0,
+    "cookie_image_url" : "epic_mint_choco.png",
+    "skill_image_url" : "epic_mint_choco_skill.png",
+    "major_image_url" : "Major_SUPPORT.png"
+  },
+
+  {
+    "name" : "클로버맛 쿠키",
+    "rank" : "RARE",
+    "tier" : 4,
+    "major" : "SUPPORT",
+    "position" : "REAR",
+    "topping" : "라즈베리, 초콜릿칩",
+    "skill_name" : "음유시인의 연주",
+    "skill_description" : "위급할 때일수록 음악이 필요한 법. 잔잔한 연주가 아군 전체의 디버프를 제거하고 체력을 점차 회복시킨다.",
+    "cool_time" : 18.0,
+    "cookie_image_url" : "rare_clover.png",
+    "skill_image_url" : "rare_clover_skill.png",
+    "major_image_url" : "Major_SUPPORT.png"
+  },
+
+  {
+    "name" : "당근맛 쿠키",
+    "rank" : "RARE",
+    "tier" : 4,
+    "major" : "SUPPORT",
+    "position" : "CENTER",
+    "topping" : "라즈베리",
+    "skill_name" : "당근 수확질",
+    "skill_description" : "단단한 당근을 연속으로 뽑아 던져 범위 피해를 입히고 아군의 방어력을 높인다! 첫 타격 후 땅에 박힌 당근을 먹으면 체력이 조금 회복된다.",
+    "cool_time" : 19.0,
+    "cookie_image_url" : "rare_carrot.png",
+    "skill_image_url" : "rare_carrot_skill.png",
+    "major_image_url" : "Major_SUPPORT.png"
+  },
+
+  {
+    "name" : "뱀파이어맛 쿠키",
+    "rank": "EPIC",
+    "tier" : 1,
+    "major" : "PENETRATION",
+    "position" : "REAR",
+    "topping" : "라즈베리",
+    "skill_name" : "흡혈",
+    "skill_description" : "박쥐로 변신! 가장 멀리있는 적을 덮쳐 피해를 주고 흡혈하여 적에게 준 피해량의 일부를 회복한다. 일반공격을 할 때도 언제나 조금씩 흡혈해 회복한다.",
+    "cool_time" : 13.0,
+    "cookie_image_url" : "epic_vampire.png",
+    "skill_image_url" : "epic_vampire_skill.png",
+    "major_image_url" : "Major_PENETRATION.png"
+  },
+
+  {
+    "name" : "칠리맛 쿠키",
+    "rank" : "EPIC",
+    "tier" : 3,
+    "major" : "PENETRATION",
+    "position" : "CENTER",
+    "topping" : "라즈베리",
+    "skill_name" : "발빠른 습격",
+    "skill_description" : "바람처럼 빠른 몸놀림으로 후방의 적들을 기습해 범위 피해를 준다. 4연타의 마지막 검격은 반드시 독하디 독한 칠리맛 쿠키의 치명타가 적용된다.",
+    "cool_time" : 12.0,
+    "cookie_image_url" : "epic_chili_pepper.png",
+    "skill_image_url" : "epic_chili_pepper_skill.png",
+    "major_image_url" : "Major_PENETRATION.png"
+  },
+
+  {
+    "name" : "탐험가맛 쿠키",
+    "rank" : "RARE",
+    "tier" : 4,
+    "major" : "PENETRATION",
+    "position" : "CENTER",
+    "topping" : "초콜릿칩",
+    "skill_name" : "밧줄의 고수",
+    "skill_description" : "뒤에서 나타난 탐험가맛 쿠키의 기습에 정신 못 차릴걸? 가장 멀리 떨어진 적 하나를 밧줄로 공격하고 속박한다.",
+    "cool_time" : 12.0,
+    "cookie_image_url" : "rare_adventurer.png",
+    "skill_image_url" : "rare_advanturer_skill.png",
+    "major_image_url" : "Major_PENETRATION.png"
+  },
+
+  {
+    "name" : "팬케이크맛 쿠키",
+    "rank" : "RARE",
+    "tier" : 4,
+    "major" : "PENETRATION",
+    "position" : "REAR",
+    "topping" : "초콜릿칩",
+    "skill_name" : "도토리 줄게!",
+    "skill_description" : "폴짝 앞으로 높이 날아가면 하늘에서 도토리 세례가?! 넓은 범위에 도토리를 떨어트려 적에게 피해를 준다. 더불어 아군 모두에게 공격 속도 증가 효과까지!",
+    "cool_time" : 15.0,
+    "cookie_image_url" : "rare_pancake.png",
+    "skill_image_url" : "rare_pancake_skill.png",
+    "major_image_url" : "Major_PENETRATION.png"
+  },
+
+  {
+    "name" : "닌자맛 쿠키",
+    "rank" : "NORMAL",
+    "tier" : 5,
+    "major" : "PENETRATION",
+    "position" : "CENTER",
+    "topping" : "",
+    "skill_name" : "조용한 기습",
+    "skill_description" : "높이 점프해 표창을 슈슉! 빠르게 표창을 두번 던져 적당 범위에 피해를 준다.",
+    "cool_time" : 11.0,
+    "cookie_image_url" : "normal_ninja.png",
+    "skill_image_url" : "normal_ninja_skill.png",
+    "major_image_url" : "Major_PENETRATION.png"
+  },
+
+  {
+    "name" : "호밀맛 쿠키",
+    "rank": "EPIC",
+    "tier" : 1,
+    "major" : "OBLIQUE_CASE",
+    "position" : "REAR",
+    "topping" : "라즈베리",
+    "skill_name" : "결투의 순간",
+    "skill_description" : "쓰러지기 싫으면 먼저 쓰러뜨려라! 소환수를 제외한 최대 체력이 가장 적은 적에게 바람처럼 빠르게 쌍권총을 난사해 여러 번의 큰 단일 피해를 준다. 결투의 흥분으로 한동안 공격 속도가 크게 증가한다.",
+    "cool_time" : 15.0,
+    "cookie_image_url" : "epic_homil.png",
+    "skill_image_url" : "epic_rye_skill.png",
+    "major_image_url" : "Major_OBLIQUE_CASE.png"
+  },
+
+  {
+    "name" : "정글전사맛 쿠키",
+    "rank" : "EPIC",
+    "tier" : 2,
+    "major" : "OBLIQUE_CASE",
+    "position" : "REAR",
+    "topping" : "초콜릿칩",
+    "skill_name" : "타이거라이더",
+    "skill_description" : "버터호랑이의 등에 올라타 돌진하여 주위에 범위 피해를 입히고 기절시킨다. 타이거라이더일 동안은 발톱을 이용해 일반 공격보다 빠르고 강력한 근접 공격을 한다.",
+    "cool_time" : 13.0,
+    "cookie_image_url" : "epic_tiger_lily.png",
+    "skill_image_url" : "epic_tiger_lily_skill.png",
+    "major_image_url" : "Major_OBLIQUE_CASE.png"
+  },
+
+  {
+    "name" : "비트맛 쿠키",
+    "rank" : "NORMAL",
+    "tier" : 5,
+    "major" : "OBLIQUE_CASE",
+    "position" : "REAR",
+    "topping" : "",
+    "skill_name" : "예리한 사냥꾼의 화살",
+    "skill_description" : "날카로운 눈썰미로 체력이 가장 낮은 적을 찾아 바로 화살을 여러 번 연사한다. 사냥꾼의 눈을 피할 수는 없지.",
+    "cool_time" : 12.0,
+    "cookie_image_url" : "normal_beet.png",
+    "skill_image_url" : "normal_beet_skill.png",
+    "major_image_url" : "Major_OBLIQUE_CASE.png"
+  },
+
+  {
+    "name" : "독버섯맛 쿠키",
+    "rank" : "EPIC",
+    "tier" : 3,
+    "major" : "EXPLOSION",
+    "position" : "CENTER",
+    "topping" : "라즈베리, 초콜릿칩",
+    "skill_name" : "보라버섯 독구름",
+    "skill_description" : "주변으로 보랏빛 독을 퍼뜨리는 버섯을 심는다. 운 나쁘게 걸린 적들을 중독시켜 헤롱거리게 만들지만, 결코 악의는 없다나.",
+    "cool_time" : 15.0,
+    "cookie_image_url" : "epic_poison_mushroom.png",
+    "skill_image_url" : "epic_poison_mushroom_skill.png",
+    "major_image_url" : "Major_EXPLOSION.png"
+  },
+
+  {
+    "name" : "체리맛 쿠키",
+    "rank" : "RARE",
+    "tier" : 4,
+    "major" : "EXPLOSION",
+    "position" : "REAR",
+    "topping" : "초콜릿칩",
+    "skill_name" : "아주 큰 체리 폭탄",
+    "skill_description" : "체리맛 쿠키가 주는 커다란 폭탄! 거대 체리는 터지며 적에게 범위 피해를 입히고 기절시킨다.",
+    "cool_time" : 16.0,
+    "cookie_image_url" : "rare_cherry.png",
+    "skill_image_url" : "rare_cherry_skill.png",
+    "major_image_url" : "Major_EXPLOSION.png"
+  },
+
+  {
+    "name" : "연금술사맛 쿠키",
+    "rank" : "RARE",
+    "tier" : 4,
+    "major" : "EXPLOSION",
+    "position" : "CENTER",
+    "topping" : "초콜릿칩",
+    "skill_name" : "임상실험",
+    "skill_description" : "연구 시작 후 연구 시간에 따라 단계별 피해와 지속 중독 피해를 입히는 시약을 던진다. 높은 단계일수록 범위도 넓어지고 피해량과 중독 피해량이 증가한다. 3단계에 도달하면 참지 못한 연금술사맛 쿠키가 자동으로 시약을 던져버리니 주의.",
+    "cool_time" : 16.0,
+    "cookie_image_url" : "rare_alchemist_skill.png",
+    "skill_image_url" : "rare_scientist.png",
+    "major_image_url" : "Major_EXPLOSION.png"
+  },
+
+  {
+    "name" : "버블껌맛 쿠키",
+    "rank" : "RARE",
+    "tier" : 4,
+    "major" : "EXPLOSION",
+    "position" : "REAR",
+    "topping" : "초콜릿칩",
+    "skill_name" : "화려하게 만들어주지!",
+    "skill_description" : "펑펑펑! 3연속 예술혼 발사! 적에게 버블껌을 쏴 여러번의 범위 피해를 입힌다. 끈적한 버블껌을 맞은 적은 공격속도가 느려진다.",
+    "cool_time" : 13.0,
+    "cookie_image_url" : "rare_bubblegum.png",
+    "skill_image_url" : "rare_gumball_skill.png",
+    "major_image_url" : "Major_EXPLOSION.png"
+  }
+
+]
