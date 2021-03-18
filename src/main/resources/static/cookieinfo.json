@@ -336,7 +336,7 @@
     "topping" : "",
     "skill_name" : "마법의 아몬드 수갑",
     "skill_description" : "마법 수갑을 휘둘러 소환수를 제외한 최대 체력이 가장 낮은 적을 붙잡아 연결된 대상들에게 피해의 일정 비율을 전달하는 확산 디버프를 적용한다. 스킬 시전 시 집중하여 스킬 끊김에 강해진다.",
-    "cool_time" : 0.0,
+    "cool_time" : 15.0,
     "cookie_image_url" : "epic_almond.png",
     "skill_image_url" : "epic_almond_skill.png"
   },
