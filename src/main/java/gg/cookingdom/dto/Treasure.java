@@ -15,4 +15,5 @@ public class Treasure {
     private Rank rank;
     private String effect;
     private String description;
+    private String imageUrl;
 }

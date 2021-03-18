@@ -34,6 +34,7 @@ public class JsonTreasureInfoRepository implements TreasureInfoRepository{
                         .rank(Rank.valueOf((String) map.get("rank")))
                         .effect((String) map.get("effect"))
                         .description((String) map.get("description"))
+                        .imageUrl((String) map.get("image_url"))
                         .build()
             );
         }
