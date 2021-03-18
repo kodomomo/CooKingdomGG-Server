@@ -19,7 +19,7 @@ public class ImageController {
             value = "/{imageName}",
             produces = {MediaType.IMAGE_JPEG_VALUE, MediaType.IMAGE_PNG_VALUE, MediaType.IMAGE_GIF_VALUE}
     )
-    public byte[] getImage(@PathVariable("image-name") String imageName) {
+    public byte[] getImage(@PathVariable String imageName) {
         return imagesService.getImage(imageName);
     }
 }
