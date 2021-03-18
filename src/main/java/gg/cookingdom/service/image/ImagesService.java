@@ -9,8 +9,6 @@ public class ImagesService {
 
     @SneakyThrows
     public byte[] getImage(String imageName){
-        return IOUtils.toByteArray(getClass().getResourceAsStream(imageName));
-
-
+        return IOUtils.toByteArray(getClass().getResourceAsStream("/static/image/" + imageName));
     }
 }
