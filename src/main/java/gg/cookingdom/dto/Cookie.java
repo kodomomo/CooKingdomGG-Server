@@ -22,4 +22,6 @@ public class Cookie {
     private String skillName;
     private String skillDescription;
     private Double coolTime;
+    private String cookieImageUrl;
+    private String skillImageUrl;
 }
