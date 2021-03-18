@@ -18,6 +18,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements WebM
     protected void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity
                 .csrf().disable()
+                .cors().and()
                 .formLogin().disable()
                 .headers()
                 .frameOptions().disable().and()
