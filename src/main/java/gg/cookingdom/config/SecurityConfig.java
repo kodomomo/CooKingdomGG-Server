@@ -22,9 +22,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
                 .authorizeRequests()
-                .antMatchers("/cookie").permitAll()
-                .antMatchers("/treasure").permitAll()
-                .antMatchers("/combination").permitAll()
+                .antMatchers("/cookie/**").permitAll()
+                .antMatchers("/treasure/**").permitAll()
+                .antMatchers("/combination/**").permitAll()
+                .antMatchers("/image/**").permitAll()
                 .anyRequest().authenticated();
     }
 }
