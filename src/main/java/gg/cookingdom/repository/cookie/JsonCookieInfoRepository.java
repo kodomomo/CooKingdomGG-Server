@@ -42,6 +42,7 @@ public class JsonCookieInfoRepository implements CookieInfoRepository {
                         .coolTime((Double) map.get("cool_time"))
                         .cookieImageUrl((String) map.get("cookie_image_url"))
                         .skillImageUrl((String) map.get("skill_image_url"))
+                        .majorImageUrl((String) map.get("major_image_url"))
                         .build()
             );
         }
