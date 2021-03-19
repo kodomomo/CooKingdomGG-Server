@@ -8,9 +8,12 @@ import gg.cookingdom.enums.Rank;
 import lombok.SneakyThrows;
 import org.json.simple.JSONArray;
 import org.json.simple.parser.JSONParser;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Repository;
 
 import java.io.FileReader;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -22,11 +25,15 @@ public class JsonCookieInfoRepository implements CookieInfoRepository {
     @SneakyThrows
     public JsonCookieInfoRepository() {
         JSONParser parser = new JSONParser();
-        Object obj = parser.parse(new FileReader(
-                getClass().getResource("/static/cookieinfo.json").getPath()));
-
-        JSONArray jsonObject = (JSONArray) obj;
         ObjectMapper mapper = new ObjectMapper();
+
+        ClassPathResource classPathResource = new ClassPathResource("/static/cookieinfo.json");
+        if (!classPathResource.exists()) {
+            throw new IllegalArgumentException();
+        }
+        Object obj = parser.parse(new InputStreamReader(classPathResource.getInputStream(), StandardCharsets.UTF_8));
+        JSONArray jsonObject = (JSONArray) obj;
+
         List<LinkedHashMap<String, ?>> list = mapper.readValue(jsonObject.toJSONString(), List.class);
         for (LinkedHashMap map : list) {
             cookies.add(
