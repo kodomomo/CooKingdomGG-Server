@@ -6,12 +6,12 @@ import gg.cookingdom.enums.CombinationType;
 import lombok.SneakyThrows;
 import org.json.simple.JSONArray;
 import org.json.simple.parser.JSONParser;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Repository;
 
-import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Repository
@@ -22,11 +22,15 @@ public class JsonCombinationInfoRepository implements CombinationInfoRepository{
     @SneakyThrows
     public JsonCombinationInfoRepository() {
         JSONParser parser = new JSONParser();
-        Object obj = parser.parse(new FileReader(
-                getClass().getResource("/static/combination.json").getPath()));
-
-        JSONArray jsonObject = (JSONArray) obj;
         ObjectMapper mapper = new ObjectMapper();
+
+        ClassPathResource classPathResource = new ClassPathResource("/static/combination.json");
+        if (!classPathResource.exists()) {
+            throw new IllegalArgumentException();
+        }
+        Object obj = parser.parse(new InputStreamReader(classPathResource.getInputStream(), StandardCharsets.UTF_8));
+        JSONArray jsonObject = (JSONArray) obj;
+
         List<LinkedHashMap<String, ?>> list = mapper.readValue(jsonObject.toJSONString(), List.class);
         for (LinkedHashMap map : list) {
             combination.add(
