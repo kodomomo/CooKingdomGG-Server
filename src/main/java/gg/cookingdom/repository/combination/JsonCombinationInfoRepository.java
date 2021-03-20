@@ -1,17 +1,17 @@
 package gg.cookingdom.repository.combination;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import gg.cookingdom.dto.Combination;
 import gg.cookingdom.enums.CombinationType;
+import gg.cookingdom.repository.JsonRepository;
+import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
-import org.json.simple.JSONArray;
-import org.json.simple.parser.JSONParser;
-import org.springframework.core.io.ClassPathResource;
+import org.json.simple.parser.ParseException;
 import org.springframework.stereotype.Repository;
 
-import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
-import java.util.*;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.stream.Collectors;
 
 @Repository
@@ -20,18 +20,10 @@ public class JsonCombinationInfoRepository implements CombinationInfoRepository{
     private List<Combination> combination = new ArrayList<>();
 
     @SneakyThrows
-    public JsonCombinationInfoRepository() {
-        JSONParser parser = new JSONParser();
-        ObjectMapper mapper = new ObjectMapper();
+    public JsonCombinationInfoRepository(JsonRepository jsonRepository) throws IOException, ParseException {
+        String paht = "combination.json";
+        List<LinkedHashMap<String, ?>> list = jsonRepository.getJsonInfo(paht);
 
-        ClassPathResource classPathResource = new ClassPathResource("/static/combination.json");
-        if (!classPathResource.exists()) {
-            throw new IllegalArgumentException();
-        }
-        Object obj = parser.parse(new InputStreamReader(classPathResource.getInputStream(), StandardCharsets.UTF_8));
-        JSONArray jsonObject = (JSONArray) obj;
-
-        List<LinkedHashMap<String, ?>> list = mapper.readValue(jsonObject.toJSONString(), List.class);
         for (LinkedHashMap map : list) {
             combination.add(
                     Combination.builder()
