@@ -5,10 +5,9 @@ import gg.cookingdom.enums.CombinationType;
 import gg.cookingdom.repository.JsonRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
-import org.json.simple.parser.ParseException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -17,12 +16,14 @@ import java.util.stream.Collectors;
 @Repository
 public class JsonCombinationInfoRepository implements CombinationInfoRepository{
 
-    private List<Combination> combination = new ArrayList<>();
+    @Autowired
+    private final JsonRepository jsonRepository = new JsonRepository();
+    private final List<Combination> combination = new ArrayList<>();
 
     @SneakyThrows
-    public JsonCombinationInfoRepository(JsonRepository jsonRepository) throws IOException, ParseException {
-        String paht = "combination.json";
-        List<LinkedHashMap<String, ?>> list = jsonRepository.getJsonInfo(paht);
+    public JsonCombinationInfoRepository() {
+        String path = "combination.json";
+        List<LinkedHashMap<String, ?>> list = jsonRepository.getJsonInfo(path);
 
         for (LinkedHashMap map : list) {
             combination.add(

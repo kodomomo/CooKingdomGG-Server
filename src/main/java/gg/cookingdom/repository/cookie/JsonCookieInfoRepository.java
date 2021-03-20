@@ -1,40 +1,30 @@
 package gg.cookingdom.repository.cookie;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import gg.cookingdom.dto.Cookie;
 import gg.cookingdom.enums.CookieMajor;
 import gg.cookingdom.enums.CookiePosition;
 import gg.cookingdom.enums.Rank;
+import gg.cookingdom.repository.JsonRepository;
 import lombok.SneakyThrows;
-import org.json.simple.JSONArray;
-import org.json.simple.parser.JSONParser;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Repository;
 
-import java.io.FileReader;
-import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
 import java.util.*;
 import java.util.stream.Collectors;
 
 @Repository
 public class JsonCookieInfoRepository implements CookieInfoRepository {
 
-    private List<Cookie> cookies = new ArrayList<>();
+    @Autowired
+    private final JsonRepository jsonRepository = new JsonRepository();
+    private final List<Cookie> cookies = new ArrayList<>();
 
     @SneakyThrows
     public JsonCookieInfoRepository() {
-        JSONParser parser = new JSONParser();
-        ObjectMapper mapper = new ObjectMapper();
+        String path = "cookieinfo.json";
+        List<LinkedHashMap<String, ?>> list = jsonRepository.getJsonInfo(path);
 
-        ClassPathResource classPathResource = new ClassPathResource("/static/cookieinfo.json");
-        if (!classPathResource.exists()) {
-            throw new IllegalArgumentException();
-        }
-        Object obj = parser.parse(new InputStreamReader(classPathResource.getInputStream(), StandardCharsets.UTF_8));
-        JSONArray jsonObject = (JSONArray) obj;
-
-        List<LinkedHashMap<String, ?>> list = mapper.readValue(jsonObject.toJSONString(), List.class);
         for (LinkedHashMap map : list) {
             cookies.add(
                     Cookie.builder()
