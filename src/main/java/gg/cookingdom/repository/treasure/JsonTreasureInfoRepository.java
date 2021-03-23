@@ -19,7 +19,7 @@ public class JsonTreasureInfoRepository implements TreasureInfoRepository{
 
     @SneakyThrows
     public JsonTreasureInfoRepository() {
-        String path = "treasureinfo.json";
+        String path = "treasureinfo";
         List<LinkedHashMap<String, ?>> list = jsonRepository.getJsonInfo(path);
 
         for (LinkedHashMap map : list) {

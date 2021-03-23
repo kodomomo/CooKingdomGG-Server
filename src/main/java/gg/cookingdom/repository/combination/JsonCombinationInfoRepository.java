@@ -3,18 +3,15 @@ package gg.cookingdom.repository.combination;
 import gg.cookingdom.dto.Combination;
 import gg.cookingdom.enums.CombinationType;
 import gg.cookingdom.repository.JsonRepository;
-import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Repository
-public class JsonCombinationInfoRepository implements CombinationInfoRepository{
+public class JsonCombinationInfoRepository implements CombinationInfoRepository {
 
     @Autowired
     private final JsonRepository jsonRepository = new JsonRepository();
@@ -22,7 +19,7 @@ public class JsonCombinationInfoRepository implements CombinationInfoRepository{
 
     @SneakyThrows
     public JsonCombinationInfoRepository() {
-        String path = "combination.json";
+        String path = "combination";
         List<LinkedHashMap<String, ?>> list = jsonRepository.getJsonInfo(path);
 
         for (LinkedHashMap map : list) {
