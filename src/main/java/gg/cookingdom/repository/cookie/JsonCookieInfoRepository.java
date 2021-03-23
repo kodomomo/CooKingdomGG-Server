@@ -7,7 +7,6 @@ import gg.cookingdom.enums.Rank;
 import gg.cookingdom.repository.JsonRepository;
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Repository;
 
 import java.util.*;
@@ -22,7 +21,7 @@ public class JsonCookieInfoRepository implements CookieInfoRepository {
 
     @SneakyThrows
     public JsonCookieInfoRepository() {
-        String path = "cookieinfo.json";
+        String path = "cookieinfo";
         List<LinkedHashMap<String, ?>> list = jsonRepository.getJsonInfo(path);
 
         for (LinkedHashMap map : list) {
