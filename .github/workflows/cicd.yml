@@ -8,7 +8,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      AWS_S3_URL: ${{AWS_S3_URL}}
+      AWS_S3_URL: ${{secrets.AWS_S3_URL}}
 
     steps:
       - uses: actions/checkout@v2
