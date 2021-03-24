@@ -5,6 +5,7 @@ import lombok.SneakyThrows;
 import okhttp3.*;
 import org.json.simple.JSONArray;
 import org.json.simple.parser.JSONParser;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
 
@@ -15,16 +16,18 @@ import java.util.List;
 
 @Component
 public class JsonRepository {
+
+    @Value("${aws.s3.static.url}")
+    private String requestUrl;
+
     @SneakyThrows
-    public List<LinkedHashMap<String, ?>> getJsonInfo(String path) {
+    public List<LinkedHashMap<String, ?>> getJsonInfo(String name) {
         JSONParser parser = new JSONParser();
         ObjectMapper mapper = new ObjectMapper();
         OkHttpClient client = new OkHttpClient();
 
-        String requestUrl = System.getenv("AWS_S3_URL");
-
         Request request = new Request.Builder()
-                .url(requestUrl + path + ".json")
+                .url(requestUrl + name + ".json")
                 .get()
                 .build();
         ResponseBody response = client.newCall(request).execute().body();

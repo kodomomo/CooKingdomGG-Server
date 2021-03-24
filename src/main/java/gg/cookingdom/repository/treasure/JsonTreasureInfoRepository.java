@@ -13,12 +13,10 @@ import java.util.stream.Collectors;
 @Repository
 public class JsonTreasureInfoRepository implements TreasureInfoRepository{
 
-    @Autowired
-    private final JsonRepository jsonRepository = new JsonRepository();
     private final List<Treasure> treasures = new ArrayList<>();
 
     @SneakyThrows
-    public JsonTreasureInfoRepository() {
+    public JsonTreasureInfoRepository(JsonRepository jsonRepository) {
         String path = "treasureinfo";
         List<LinkedHashMap<String, ?>> list = jsonRepository.getJsonInfo(path);
 

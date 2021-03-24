@@ -15,12 +15,10 @@ import java.util.stream.Collectors;
 @Repository
 public class JsonCookieInfoRepository implements CookieInfoRepository {
 
-    @Autowired
-    private final JsonRepository jsonRepository = new JsonRepository();
     private final List<Cookie> cookies = new ArrayList<>();
 
     @SneakyThrows
-    public JsonCookieInfoRepository() {
+    public JsonCookieInfoRepository(JsonRepository jsonRepository) {
         String path = "cookieinfo";
         List<LinkedHashMap<String, ?>> list = jsonRepository.getJsonInfo(path);
 
