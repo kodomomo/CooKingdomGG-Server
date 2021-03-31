@@ -22,7 +22,7 @@ jobs:
         run: chmod +x gradlew
       
       - name: Build with Gradle
-        run: ./gradlew build --info
+        run: ./gradlew build
 
       - name: Build Docker Image
         run: docker build -t rkdtlsgml40/cookingdom:latest .
