@@ -6,10 +6,10 @@ import okhttp3.*;
 import org.json.simple.JSONArray;
 import org.json.simple.parser.JSONParser;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
 
 import java.io.InputStreamReader;
+import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -26,8 +26,10 @@ public class JsonRepository {
         ObjectMapper mapper = new ObjectMapper();
         OkHttpClient client = new OkHttpClient();
 
+        String url = URLEncoder.encode(requestUrl + name + ".json", "UTF-8");
+
         Request request = new Request.Builder()
-                .url(requestUrl + name + ".json")
+                .url(url)
                 .get()
                 .build();
         ResponseBody response = client.newCall(request).execute().body();
