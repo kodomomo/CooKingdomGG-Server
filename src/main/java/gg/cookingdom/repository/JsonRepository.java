@@ -26,10 +26,9 @@ public class JsonRepository {
         ObjectMapper mapper = new ObjectMapper();
         OkHttpClient client = new OkHttpClient();
 
-        String url = URLEncoder.encode(requestUrl + name + ".json", "UTF-8");
-
+        String url = URLEncoder.encode(name + ".json", "UTF-8");
         Request request = new Request.Builder()
-                .url(url)
+                .url(requestUrl + url)
                 .get()
                 .build();
         ResponseBody response = client.newCall(request).execute().body();
