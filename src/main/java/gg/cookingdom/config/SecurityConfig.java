@@ -21,11 +21,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity
                 .csrf().disable()
-                .cors().and()
-                .formLogin()
-                    .disable()
+                .formLogin().disable()
                 .headers()
-                .frameOptions()
+                    .frameOptions()
                     .disable().and()
                 .sessionManagement()
                     .sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
@@ -35,19 +33,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .antMatchers("/treasure/**").permitAll()
                     .antMatchers("/combination/**").permitAll()
                     .antMatchers("/image/**").permitAll()
-                .anyRequest().authenticated();
-    }
-
-    @Bean
-    public CorsConfigurationSource corsConfigurationSource() {
-        CorsConfiguration configuration = new CorsConfiguration();
-        configuration.addAllowedOrigin("*");
-        configuration.addAllowedHeader("*");
-        configuration.addAllowedMethod("GET, POST, PUT, PATCH");
-        configuration.setAllowCredentials(true);
-        configuration.setMaxAge(3600L);
-        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        source.registerCorsConfiguration("/**", configuration);
-        return source;
+                    .anyRequest().authenticated().and()
+                .apply(new CorsConfigurer());
     }
 }
