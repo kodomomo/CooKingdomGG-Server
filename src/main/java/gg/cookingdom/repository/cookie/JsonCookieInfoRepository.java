@@ -40,12 +40,7 @@ public class JsonCookieInfoRepository implements CookieInfoRepository {
                         .build()
             );
         }
-        Collections.sort(cookies, Comparator.comparing(Cookie::getName));
-    }
-
-    @Override
-    public List<Cookie> getCookies() {
-        return cookies;
+        cookies.sort(Comparator.comparing(Cookie::getName));
     }
 
     @Override
@@ -57,6 +52,11 @@ public class JsonCookieInfoRepository implements CookieInfoRepository {
 
     @Override
     public List<Cookie> getCookieByRank(Rank rank) {
+        if (rank == null) {
+            return cookies.stream()
+                    .sorted(Comparator.comparing(Cookie::getRank))
+                    .collect(Collectors.toList());
+        }
         return cookies.stream()
                 .filter(cookie -> cookie.getRank() == rank)
                 .collect(Collectors.toList());
@@ -64,6 +64,11 @@ public class JsonCookieInfoRepository implements CookieInfoRepository {
 
     @Override
     public List<Cookie> getCookieByTier(Integer tier) {
+        if (tier == null) {
+            return cookies.stream()
+                    .sorted(Comparator.comparing(Cookie::getTier))
+                    .collect(Collectors.toList());
+        }
         return cookies.stream()
                 .filter(cookie -> cookie.getTier().equals(tier))
                 .collect(Collectors.toList());
@@ -71,6 +76,11 @@ public class JsonCookieInfoRepository implements CookieInfoRepository {
 
     @Override
     public List<Cookie> getCookieByMajor(CookieMajor major) {
+        if (major == null) {
+            return cookies.stream()
+                    .sorted(Comparator.comparing(Cookie::getMajor))
+                    .collect(Collectors.toList());
+        }
         return cookies.stream()
                 .filter(cookie -> cookie.getMajor().equals(major))
                 .collect(Collectors.toList());
@@ -78,6 +88,11 @@ public class JsonCookieInfoRepository implements CookieInfoRepository {
 
     @Override
     public List<Cookie> getCookieByPosition(CookiePosition position) {
+        if (position == null) {
+            return cookies.stream()
+                    .sorted(Comparator.comparing(Cookie::getPosition))
+                    .collect(Collectors.toList());
+        }
         return cookies.stream()
                 .filter(cookie -> cookie.getPosition().equals(position))
                 .collect(Collectors.toList());
