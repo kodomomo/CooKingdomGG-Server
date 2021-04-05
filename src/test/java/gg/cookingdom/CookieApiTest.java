@@ -36,10 +36,28 @@ public class CookieApiTest {
     }
 
     @Test
-    public void cookieListTest() throws Exception {
-        mvc.perform(get("/cookie"))
+    public void getByCookiesByTier() throws Exception {
+        mvc.perform(get("/cookie/tier"))
                 .andExpect(status().isOk());
-        }
+    }
+
+    @Test
+    public void getByCookiesByRank() throws Exception {
+        mvc.perform(get("/cookie/rank"))
+                .andExpect(status().isOk());
+    }
+
+    @Test
+    public void getByCookiesByMajor() throws Exception {
+        mvc.perform(get("/cookie/major"))
+                .andExpect(status().isOk());
+    }
+
+    @Test
+    public void getByCookiesByPosition() throws Exception {
+        mvc.perform(get("/cookie/position"))
+                .andExpect(status().isOk());
+    }
 
     @Test
     public void getByNameTest() throws Exception {
