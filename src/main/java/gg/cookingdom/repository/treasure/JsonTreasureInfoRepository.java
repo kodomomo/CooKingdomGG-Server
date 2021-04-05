@@ -4,7 +4,6 @@ import gg.cookingdom.dto.Treasure;
 import gg.cookingdom.enums.Rank;
 import gg.cookingdom.repository.JsonRepository;
 import lombok.SneakyThrows;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.*;
@@ -31,7 +30,7 @@ public class JsonTreasureInfoRepository implements TreasureInfoRepository{
                         .build()
             );
         }
-        Collections.sort(treasures, Comparator.comparing(Treasure::getName));
+        treasures.sort(Comparator.comparing(Treasure::getName));
     }
 
     @Override
@@ -48,6 +47,11 @@ public class JsonTreasureInfoRepository implements TreasureInfoRepository{
 
     @Override
     public List<Treasure> getTreasureByRank(Rank rank) {
+        if (rank == null) {
+            return treasures.stream()
+                    .sorted(Comparator.comparing(Treasure::getRank))
+                    .collect(Collectors.toList());
+        }
         return treasures.stream()
                 .filter(treasure -> treasure.getRank().equals(rank))
                 .collect(Collectors.toList());

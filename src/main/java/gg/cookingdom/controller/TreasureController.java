@@ -29,7 +29,7 @@ public class TreasureController {
     }
 
     @GetMapping("/rank")
-    public List<Treasure> getByRank(@RequestParam Rank rank) {
+    public List<Treasure> getByRank(@RequestParam(required = false) Rank rank) {
         return treasureRepository.getTreasureByRank(rank);
     }
 
