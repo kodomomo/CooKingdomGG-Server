@@ -1,6 +1,7 @@
 package gg.cookingdom.controller
 
 import gg.cookingdom.service.image.ImageService
+import org.springframework.cache.annotation.Cacheable
 import org.springframework.http.MediaType
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
