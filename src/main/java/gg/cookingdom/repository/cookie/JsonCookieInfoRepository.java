@@ -25,6 +25,7 @@ public class JsonCookieInfoRepository implements CookieInfoRepository {
         List<LinkedHashMap<String, ?>> list = jsonRepository.getJsonInfo(path);
 
         for (LinkedHashMap map : list) {
+            System.out.println(map.get("name"));
             cookies.add(
                     Cookie.builder()
                         .name((String) map.get("name"))

@@ -26,7 +26,7 @@ public class JsonToppingRepository implements ToppingRepository {
             toppings.add(
                     Topping.builder()
                             .name((String) map.get("name"))
-                            .rank(Rank.valueOf((String) map.get("rank")))
+                            .rank((String) map.get("rank"))
                             .imageUrl((String) map.get("image_url"))
                             .build()
             );

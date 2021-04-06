@@ -8,7 +8,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Topping {
-    private Rank rank;
+    private String rank;
     private String name;
     private String imageUrl;
 }
