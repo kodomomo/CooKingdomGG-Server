@@ -6,10 +6,12 @@ import gg.cookingdom.enums.CookiePosition;
 import gg.cookingdom.enums.Rank;
 import gg.cookingdom.repository.JsonRepository;
 import lombok.SneakyThrows;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.stream.Collectors;
 
 @Repository
@@ -30,7 +32,7 @@ public class JsonCookieInfoRepository implements CookieInfoRepository {
                         .tier((Integer) map.get("tier"))
                         .major(CookieMajor.valueOf((String) map.get("major")))
                         .position(CookiePosition.valueOf((String) map.get("position")))
-                        .topping((String) map.get("topping"))
+                        .topping((List<String>) map.get("topping"))
                         .skillName((String) map.get("skill_name"))
                         .skillDescription((String) map.get("skill_description"))
                         .coolTime((Double) map.get("cool_time"))

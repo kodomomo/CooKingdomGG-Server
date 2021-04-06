@@ -8,6 +8,8 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Getter
 @Builder
 @NoArgsConstructor
@@ -18,7 +20,7 @@ public class Cookie {
     private Integer tier;
     private CookieMajor major;
     private CookiePosition position;
-    private String topping;
+    private List<String> topping;
     private String skillName;
     private String skillDescription;
     private Double coolTime;
