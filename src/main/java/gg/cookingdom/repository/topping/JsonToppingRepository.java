@@ -22,7 +22,7 @@ public class JsonToppingRepository implements ToppingRepository {
         String path = "topping";
         List<LinkedHashMap<String, ?>> list = jsonRepository.getJsonInfo(path);
 
-        for (LinkedHashMap map : list) {
+        for (LinkedHashMap<String, ?> map : list) {
             toppings.add(
                     Topping.builder()
                             .name((String) map.get("name"))

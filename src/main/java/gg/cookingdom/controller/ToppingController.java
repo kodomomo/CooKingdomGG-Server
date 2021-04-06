@@ -1,24 +1,22 @@
 package gg.cookingdom.controller;
 
-import gg.cookingdom.dto.Topping;
-import gg.cookingdom.repository.topping.ToppingRepository;
+import gg.cookingdom.service.image.ImageService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/topping")
 @RequiredArgsConstructor
 public class ToppingController {
 
-    private final ToppingRepository toppingRepository;
+    private final ImageService imageService;
 
-    @GetMapping("/name")
-    public List<Topping> getToppingByName(@RequestParam String name) {
-        return toppingRepository.getToppingByName(name);
+    @GetMapping(
+            value = "/{imageName}",
+            produces = {MediaType.IMAGE_JPEG_VALUE, MediaType.IMAGE_PNG_VALUE, MediaType.IMAGE_GIF_VALUE}
+    )
+    public byte[] getToppingByName(@PathVariable String imageName) {
+        return (byte[]) imageService.getImage(imageName + ".png");
     }
 }

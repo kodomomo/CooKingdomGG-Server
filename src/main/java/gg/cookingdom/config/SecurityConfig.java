@@ -33,6 +33,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .antMatchers("/treasure/**").permitAll()
                     .antMatchers("/combination/**").permitAll()
                     .antMatchers("/image/**").permitAll()
+                    .antMatchers("/topping/**").permitAll()
                     .anyRequest().authenticated().and()
                 .apply(new CorsConfigurer());
     }

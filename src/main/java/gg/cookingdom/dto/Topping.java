@@ -1,6 +1,5 @@
 package gg.cookingdom.dto;
 
-import gg.cookingdom.enums.Rank;
 import lombok.*;
 
 @Getter
