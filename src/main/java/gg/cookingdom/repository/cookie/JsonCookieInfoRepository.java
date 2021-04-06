@@ -25,7 +25,6 @@ public class JsonCookieInfoRepository implements CookieInfoRepository {
         List<LinkedHashMap<String, ?>> list = jsonRepository.getJsonInfo(path);
 
         for (LinkedHashMap map : list) {
-            System.out.println(map.get("name"));
             cookies.add(
                     Cookie.builder()
                         .name((String) map.get("name"))
@@ -79,24 +78,28 @@ public class JsonCookieInfoRepository implements CookieInfoRepository {
 
     @Override
     public List<Cookie> getCookieByMajor(CookieMajor major) {
-        if (major == null) {
+        if (major == null || major.equals("")) {
             return cookies.stream()
+                    .sorted(Comparator.comparing(Cookie::getRank))
                     .sorted(Comparator.comparing(Cookie::getMajor))
                     .collect(Collectors.toList());
         }
         return cookies.stream()
+                .sorted(Comparator.comparing(Cookie::getRank))
                 .filter(cookie -> cookie.getMajor().equals(major))
                 .collect(Collectors.toList());
     }
 
     @Override
     public List<Cookie> getCookieByPosition(CookiePosition position) {
-        if (position == null) {
+        if (position == null || position.equals("")) {
             return cookies.stream()
+                    .sorted(Comparator.comparing(Cookie::getRank))
                     .sorted(Comparator.comparing(Cookie::getPosition))
                     .collect(Collectors.toList());
         }
         return cookies.stream()
+                .sorted(Comparator.comparing(Cookie::getRank))
                 .filter(cookie -> cookie.getPosition().equals(position))
                 .collect(Collectors.toList());
     }
