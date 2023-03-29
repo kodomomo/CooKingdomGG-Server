@@ -28,7 +28,7 @@ jobs:
         run: docker build -t rkdtlsgml40/cookingdom:latest .
 
       - name: Publish To Registry
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: rkdtlsgml40/cookingdom:latest
           username: ${{ secrets.DOCKER_USERNAME }}
